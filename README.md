@@ -1,1 +1,3 @@
-# blockchainPG
+# Group project of the TU Dortmund
+## Distributed Optimization with Blockchain
+Here comes the general description of the project...
