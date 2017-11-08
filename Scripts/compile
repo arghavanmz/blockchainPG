@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "var ${1}Sol = `solc --optimize --combined-json abi,bin,interface $1.sol`
+var ${1}Abi = ${1}Sol.contracts['$1.sol:$1'].abi
+var ${1}Bin = '0x' + ${1}Sol.contracts['$1.sol:$1'].bin
+var ${1}Contract = eth.contract(JSON.parse(${1}Abi))" > $1.js
