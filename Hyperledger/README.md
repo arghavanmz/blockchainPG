@@ -1,1 +1,1 @@
-# Implementation with an Hyperledger framework
+# Implementation with an Hyperledger blockchain
