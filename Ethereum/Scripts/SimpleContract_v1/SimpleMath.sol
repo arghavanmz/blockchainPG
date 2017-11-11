@@ -13,13 +13,13 @@ contract mortal {
 
 contract SimpleMath is mortal {
 	uint public result;
-	
+
 	function setResult(uint input1) returns (uint){
 		result = input1*input1+1;	
 	}	
-	
+
 	function outputResult(uint input1) constant returns (uint) {
 		setResult(input1);
-        return (result);
-    }
+		return (result);
+   	}
 }
