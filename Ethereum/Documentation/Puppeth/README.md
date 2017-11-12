@@ -1,7 +1,9 @@
 #	Setting up a network using Puppeth 
 CAUTION!!! : this is only a starting point for the puppeth Docu. It has gaps and is totally not(!) complete. Working again on this documentation is absolutely necessary in the future.
 
-## System Prerequesites
+## Step 0: System Prerequesites
+...
+
 
 ## Step 1: Install newest Geth-Version
 Currently Geth1.6
