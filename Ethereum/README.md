@@ -1,5 +1,6 @@
 # Implementation with an Ethereum blockchain
 ### Folders:
+- **Coordinator**: First sketch of the Coordinator contract, still under development...
 - **Scripts**: Contains useful scripts for Geth to run server and console, unlock an account, compile and deploy a Solidity contract
 - **SumWebApp**: Simple example of a blockchain network with a web interface made with Truffle
 
