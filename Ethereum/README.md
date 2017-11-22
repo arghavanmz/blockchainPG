@@ -35,8 +35,11 @@ Note that the RPC flag is important for connecting to the web interface!
 3. Check the port in the `truffle.js` file, it should match the RPC port of your network (later important for migrating the contracts)
 4. Adapt the application to your needs by editing the web interface in the `./app` folder and creating new contracts in the `./contracts` folder and adding them to the `./migrations/2_deploy_contracts.js` with:  
 `var Contract = artifacts.require("./Contract.sol");`  
-`deployer.deploy(Contract);`
+`deployer.deploy(Contract);`  
+If a library is used, it must be linked before the contract gets deployed:  
+`var Library = artifacts.require("./Library.sol");`  
+`deployer.link(Library, Contract);` 
 5. Run your network or the development network of truffle (`truffel develop`)
-6. First compile your contracts `truffle compile`, then migrate them to the network `truffle migrate` and run `truffle deploy`
+6. First compile your contracts `truffle compile`, then migrate them to the network `truffle migrate` or run `truffle deploy` to do everything in one step. Add the flag `--reset` to renew the compilation and migration.
 7. Run the web server with `npm run dev`
 8. Play around and improve it!
